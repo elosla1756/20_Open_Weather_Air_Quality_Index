@@ -8,18 +8,36 @@
 
 ## **Team Assessment**:
 
-#### Michelle and I communicated via Slack for quick messages throughout the day, and through Google Hangout video calls when we were reviewing our files and preparing for the final presentation. We did not face any challenges with these communication tools. 
+#### Michelle and I communicated via Slack for quick messages throughout the day, and through Google Meet video calls when we were reviewing our files and preparing for the final presentation. We did not face any challenges with these communication tools. 
 
 #### As a team, our greatest strength was that we were both very responsible contributors to the team, and did not miss any of our internal deadlines. I knew that when Michelle volunteered to do a task on the project, she would get it done as promised. 
 
 ## **Summary of Project**:
 
-#### ADD
+#### As a **topic**, we have decided to analyze the Air Quality Index (AQI) of 4 different locations (Alaska, California, Washington, DC and Massachusetts) and compare those against the 8 pollutants that are tracked by OpenWeather:
 
-Presents a cohesive, three- to four-sentence
-summary of the project that could be used on a
-LinkedIn profile, in an interview or cover letter, or
-as an elevator pitch, including all of the following:
-✓ Topic addressed
-✓ Machine module used
-✓ Results of the analysis
+- Carbon monoxide (CO)
+- Nitrogen monoxide (NO)
+- Nitrogen dioxide (NO2)
+- Ozone (O3)
+- Sulphur dioxide (SO2)
+- Ammonia (NH3)
+- and Particle pollution (also known as particulate matter, specifically PM2.5 and PM10)
+
+
+#### In order to gather our data, we created an Application Programming Interface (API) to capture the historical data since 11/20/20. We ran the data through several **machine learning models** to understand which pollutant had the most impact on the AQIs, for the 4 lcoations, and at each location individually.
+
+##### The first machine learning model we used was the **RandomForestClassifier** to create a supervised learning classifier that uses averaging methods and should reduce varience, as it is combining diverse trees. 
+
+##### The second machine learning model we used was **AdaBoost**, which is a boosting supervised learning classifier aimed to reduce bias and "adapt" around weight values.
+
+#### In summary, our analysis showed that for each of the 4 locations, and for all locations combined, the ozone (O3) levels had the most impact on the overall Air Quality Index (AQI). We were able to visualize these results using both Tableau and PyPlot. Below are some examples of our conclusions:
+
+<img width="752" alt="Screenshot 2021-09-29 081752" src="https://user-images.githubusercontent.com/82544686/135267544-1ae18a4a-9386-49bd-8636-e0563a2b3d12.png">
+
+![Screen Shot 2021-09-29 at 6 56 45 AM](https://user-images.githubusercontent.com/82982952/135255646-8e7134d1-52bb-48f3-95c3-ba7e9202cffe.png)
+
+![Screen Shot 2021-09-29 at 6 57 30 AM](https://user-images.githubusercontent.com/82982952/135255673-8813994a-17c9-4895-87c8-362ec7713a0d.png)
+
+![Screen Shot 2021-09-29 at 6 57 49 AM](https://user-images.githubusercontent.com/82982952/135255720-cf1f4632-cba2-4695-a185-4a87fedaec9b.png)
+
